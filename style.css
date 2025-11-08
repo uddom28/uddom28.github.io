@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner {
+    height: 300px;
+    background-image: url(images/Image20251018085019.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    padding: 5px;
+}   
+
+.banner_content {
+    background-color: rgba(0, 0, 0,0.6);
+    display: grid;
+    width: fit-content;
+    padding: 20px;
+    gap: 10px;
+    
+}
+
+.banner_content ion-icon {
+    font-size: 30px;
+    color: gainsboro;
+}
+
+.table_content {
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.table_content a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family:'Lucida Sans', 'Lucida Sans Regular',
+     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+.card_wrapper {
+    background-color: blue;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: beige;
+    height: 300px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.card_info {
+    background-color: rgba(0, 0, 0,0.8);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 0.5s;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.info_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn button {
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+}
+
+.btn button:nth-child(1){
+    background-color: orange;
+    color: white;
+}
+
+.btn button:nth-child(2){
+    color: orange;
+    background: none;
+    border: 1px solid orange;
+}
+
+
+.card_info ion-icon {
+    font-size: 25px ;
+}
+
+.card:hover .card_info{
+    display: grid;
+}
+
+.table_content a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+    transition: 0.5s;
+}
+
+.footer {
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    background-color: blue;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.movie {
+    border: 2px solid;
+    background-color: #2a6bdb;
+    padding: 5px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.system_type {
+    border: 2px solid;
+    background-color: #2a6bdb;
+    padding: 5px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.movie_line {
+    border: 2px solid;
+    background-color: #2a6bdb;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer h2{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer h3{
+    font-size: 12px;
+    font-weight: 200;
+    padding-bottom: 5px;
+}
+

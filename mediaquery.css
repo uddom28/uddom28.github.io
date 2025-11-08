@@ -1,0 +1,44 @@
+@media screen and (min-width:760px) {
+
+    .nav{
+        display: flex;
+        gap: 25px;
+    }
+
+    .table_content {
+        display: none;
+    }
+
+    .banner_content {
+        grid-template-columns: auto 1fr auto;
+        gap: 30px;
+    }
+
+    .card_wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+    .card_wrapper{
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+    }
+
+    .footer .movie{
+        display: flex;
+    }
+
+    .footer .system_type {
+        display: flex;
+    }
+    .footer {
+        grid-template-columns: auto 1fr auto;
+    }
+    .movie_line {
+        flex-direction: column;
+    }
+
+}
